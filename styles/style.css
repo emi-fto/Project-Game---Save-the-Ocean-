@@ -1,0 +1,138 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h2:not(#stats h2) {
+    background-color: rgba(128, 128, 128, 0.5);
+    font-size: 2.1vw;
+    margin: 0rem 10rem;
+    padding: 1rem;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+}
+
+#gameIntro {
+    display: flex; /* will turn into none with DOM Manipulation */
+    background-image: url("../img/dirtyoc.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: calc(45vW + 4px);    
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;      
+} 
+
+#gameIntro p, li {
+    background-color: rgba(128, 128, 128, 0.8);
+    font-size: 1.2vw;
+    padding: 1rem;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+}
+
+#gameContainer{
+    display: none; /* will turn into block with DOM Manipulation */
+    background-image: url("../img/ocplay.jpg");
+    background-size: cover;
+    width: 100vW;
+    height: calc(45vW + 4px);   
+    position: relative;
+}
+
+#stats {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.8);
+    width: 10vw;
+    font-size: 1.5vw;
+    padding: 1rem;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+}
+
+#gameEnd1 {
+    display: none; /* will turn into flex with DOM Manipulation */
+    background-image: url("../img/clearoc.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: calc(45vW + 4px);     
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;    
+}
+
+#gameEnd2 {
+    display: none; /* will turn into flex with DOM Manipulation */
+    background-image: url("../img/dirtyoc.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: calc(45vW + 4px);    
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;  
+}
+
+.button {
+    border: none;
+    background-color:darkred;
+    font-size: 3.5vw;
+    font-weight: 800;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 6px 6px rgb(52, 1, 1);
+    margin-bottom: 2rem;
+}
+
+.button:active {
+    box-shadow: none;
+  }

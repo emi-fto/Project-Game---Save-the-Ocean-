@@ -4,16 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <title>Save the Ocean!</title>
   </head>
   <body>
-    <div>
-      <h1></h1>
-    </div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <main>
+      <div id="gameIntro"> <!-- This is going to be the landing page -->
+        <h2>Our ocean needs you! 8 millions of plastics bottles finish each year in it, help us prevent it! <!-- https://www.jerseyislandholidays.com/plastic-bottle-pollution-statistics/ -->
+          Click on start!</h2>
+        <br />
+        <button class="button" id="startButton">Start Game!</button>
+        <p>Instructions: Catch as many bottles as possible before they land into the ocean!
+          <ul>
+            <li>Arrow left -> move left</li>
+            <li>Arrow right -> move right</li>
+            <li>Arrow up -> move up</li>
+            <li>Arrow down -> move down</li>
+          </ul>
+        </p>
+      </div>
+
+      <div id="gameContainer">
+        <div id="stats">
+          <h2>Statistics</h2>
+          <p>Score: <span id="score">0</span></p>
+          <p>Lives: <span id="lives">3</span></p>
+        </div>
+      </div>
+
+      <div id="gameEnd1"> <!-- This is going to be the end-game screen if the player catches at least 20 bottles -->
+        <h2>Great! With to your effort you prevented <span>0</span> plastic bottles and <span>0</span> kg of plastic to finish into the ocean!
+          We would need only <span>0</span> persons like you to clean the entire ocean from wasted bottles!
+          Click on RE-START to play again!
+        </h2>
+        <br />
+        <button class="button" id="restartButton1">Re-Start!</button>
+      </div>
+
+      <div id="gameEnd2"> <!-- This is going to be the end-game screen if the player catches less than 20 bottles -->
+        <h2>Oh no! It seems you weren't paying too much effort! Our ocean still needs you!
+          Click on RE-START to play again!
+          </h2>
+        <br />
+        <button class="button" id="restartButton2">Re-Start!</button>
+      </div> 
+    </main>
     <script type="text/javascript" src="./js/bottle.js"></script>
     <script type="text/javascript" src="./js/net.js"></script>
     <script type="text/javascript" src="./js/game.js"></script>

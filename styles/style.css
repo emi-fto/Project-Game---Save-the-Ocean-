@@ -31,6 +31,8 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("../img/deepwater.jpg");
+    background-size: cover;
 }
 ol, ul {
 	list-style: none;
@@ -61,8 +63,8 @@ h2:not(#stats h2) {
     display: flex; /* will turn into none with DOM Manipulation */
     background-image: url("../img/dirtyoc.jpg");
     background-size: cover;
-    width: 100vw;
-    height: calc(45vW + 4px);    
+    width: 100vW;
+    height: calc(45vW + 4px);
     flex-direction: column;
     align-items: center;
     justify-content:space-evenly;      
@@ -80,9 +82,8 @@ h2:not(#stats h2) {
 #gameContainer{
     display: none; /* will turn into block with DOM Manipulation */
     background-image: url("../img/ocplay.jpg");
-    background-size: cover;
-    width: 100vW;
-    height: calc(45vW + 4px);   
+    width: 1300x;
+    height: 619px; 
     position: relative;
 }
 
@@ -90,11 +91,12 @@ h2:not(#stats h2) {
     display: flex;
     flex-direction: column;
     background-color: rgba(128, 128, 128, 0.8);
-    width: 10vw;
+    width: 200px;
     font-size: 1.5vw;
-    padding: 1rem;
     font-weight: 800;
+    height: 619px;
     text-align: center;
+    justify-content: space-around;
     color: white;
 }
 
@@ -103,7 +105,7 @@ h2:not(#stats h2) {
     background-image: url("../img/clearoc.jpg");
     background-size: cover;
     width: 100vw;
-    height: calc(45vW + 4px);     
+    height: calc(45vW + 4px);   
     flex-direction: column;
     align-items: center;
     justify-content:space-evenly;    
@@ -114,7 +116,7 @@ h2:not(#stats h2) {
     background-image: url("../img/dirtyoc.jpg");
     background-size: cover;
     width: 100vw;
-    height: calc(45vW + 4px);    
+    height: calc(45vW + 4px);  
     flex-direction: column;
     align-items: center;
     justify-content:space-evenly;  

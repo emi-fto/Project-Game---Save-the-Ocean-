@@ -1,6 +1,6 @@
 # Save the Ocean!
 
-[Click here to see deployed game](http://github.com)
+[Click here to see deployed game](https://emi-fto.github.io/Project-Game---Save-the-Ocean-/)
 
 ## Description
 
@@ -54,5 +54,5 @@ Save the Ocean is a game created to make people aware on the topic of ocean poll
 
 - [Trello Link](https://trello.com)
 - [Slides Link](http://slides.com)
-- [Github repository Link](http://github.com)
-- [Deployment Link](http://github.com)
+- [Github repository Link](https://github.com/emi-fto/Project-Game---Save-the-Ocean-)
+- [Deployment Link](https://emi-fto.github.io/Project-Game---Save-the-Ocean-/)

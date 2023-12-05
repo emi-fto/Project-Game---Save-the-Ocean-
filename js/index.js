@@ -11,18 +11,38 @@ window.addEventListener("load", () => {
     }
       
 
-    startButton.addEventListener("click", function () {
+    startButton.addEventListener("click", () => {
         startGame();
     });
-    restartButton1.addEventListener("click", function () {
+    restartButton1.addEventListener("click", () => {
         restartGame();
     });
 
-    restartButton2.addEventListener("click", function () {
+    restartButton2.addEventListener("click", () => {
         restartGame();
+    });
+
+    document.addEventListener("keydown", (event) => { //setting the keys to move and an Easter Egg
+        if (event.code === "ArrowUp") {
+            game.player.directionY = -5;
+        }
+        if (event.code === "ArrowDown") {
+            game.player.directionY = +5;
+        }
+        if (event.code === "ArrowLeft") {
+            game.player.directionX = -5;
+        }
+        if (event.code === "ArrowRight") {
+            game.player.directionX = +5;
+        }
+        if (event.code === "KeyM") {
+            game.bottles.forEach(bottle => bottle.element.src = "img/money.png");
+        }
     });
 
     function restartGame() {
         location.reload();
     }
+
+
 })

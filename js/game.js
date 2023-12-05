@@ -7,6 +7,7 @@ class Game {
         this.score = 0;
         this.lives = 3;
         this.player = null;
+        this.bottles = [];
     }
 
     start() {
@@ -14,10 +15,12 @@ class Game {
         this.gameScreen.style.display = "block";
         this.player = new Player (this.gameScreen);
         this.gameLoop();
+        this.bottles.push(new Bottle (this.gameScreen));
     }
 
     gameLoop () {
-        this.player.move()
+        this.player.move();
+        this.bottles.forEach(bottle => bottle.move());
         requestAnimationFrame(() => this.gameLoop());
     }
 } 

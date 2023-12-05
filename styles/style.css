@@ -82,7 +82,7 @@ h2:not(#stats h2) {
 #gameContainer{
     display: none; /* will turn into block with DOM Manipulation */
     background-image: url("../img/ocplay.jpg");
-    width: 1300x;
+    width: 1366px;
     height: 619px; 
     position: relative;
 }

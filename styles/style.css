@@ -110,6 +110,9 @@ h2:not(#stats h2) {
     align-items: center;
     justify-content:space-evenly;    
 }
+.textBold {
+    color: darkred;
+}
 
 #gameEnd2 {
     display: none; /* will turn into flex with DOM Manipulation */

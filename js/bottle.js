@@ -15,10 +15,13 @@ class Bottle {
         this.element.style.top = `${this.top}px`;  
 
         this.gameScreen.appendChild(this.element);  
+        this.counter = 1 + (setInterval(() => {
+            +1
+        }, 10)); // increment the speed of falling bottles but also the top, so they will go under the sea level!
     }
 
     move (){
-        this.top +=2;
+        this.top += this.counter;
         this.updatePosition();
     }
 

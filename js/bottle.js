@@ -21,7 +21,11 @@ class Bottle {
     }
 
     move (){
-        this.top += this.counter;
+        if (this.top < 619 - 130) {
+            this.top += this.counter;
+        } else {
+            this.top = 619 - 130;
+        }
         this.updatePosition();
     }
 

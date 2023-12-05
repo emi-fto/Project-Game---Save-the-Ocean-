@@ -6,7 +6,7 @@ class Player {
         this.height = 50; 
         this.width = 120;
         this.element = document.createElement("img");
-        this.element.src = "../img/player.png";
+        this.element.src = "img/player.png";
         this.element.style.position = "absolute"; 
         this.gameScreen.appendChild(this.element);
 

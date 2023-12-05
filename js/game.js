@@ -54,11 +54,11 @@ class Game {
             this.bottles.push(new Bottle (this.gameScreen));
         }
 
-        if (this.isGameOver && this.score > 10) {
+        if (this.isGameOver && this.score >= 10) {
             this.gameScreen.style.display = "none";
             this.endScreen1.style.display = "flex";
         }
-        if (this.isGameOver && this.score < 10) {
+        else if (this.isGameOver && this.score < 10) {
             this.gameScreen.style.display = "none";
             this.endScreen2.style.display = "flex";
         } else {

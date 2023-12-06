@@ -24,19 +24,28 @@ window.addEventListener("load", () => {
 
     document.addEventListener("keydown", (event) => { 
         if (event.code === "ArrowUp") {
-            game.player.directionY = -5;
+            game.player.directionY = -7;
         }
         if (event.code === "ArrowDown") {
-            game.player.directionY = +5;
+            game.player.directionY = +7;
         }
         if (event.code === "ArrowLeft") {
-            game.player.directionX = -5;
+            game.player.directionX = -7;
         }
         if (event.code === "ArrowRight") {
-            game.player.directionX = +5;
+            game.player.directionX = +7;
         }
         if (event.code === "KeyM") {
-            game.bottles.forEach(bottle => bottle.element.src = "img/money.png"); //setting the Easter Egg
+            game.easterEgg = true; //setting the Easter Egg             
+        }
+        if (event.code === "KeyB") {
+            game.easterEgg = false; //unsetting the Easter Egg             
+        }
+        if (event.code === "KeyS") {
+            game.isMuted = true; //setting audio off
+        }
+        if (event.code === "KeyO") {
+            game.isMuted = false; //setting audio on
         }
     });
 

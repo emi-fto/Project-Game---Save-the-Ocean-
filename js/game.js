@@ -12,6 +12,11 @@ class Game {
         this.bottles = [];
         this.animatedId = null;
         this.isGameOver = false;
+        this.audio = new Audio ("audio/waves.mp3");
+        this.ohYeah = new Audio ("audio/ohyeah.mp3");
+        this.ohNo = new Audio ("audio/ohno.mp3");
+        this.isMuted = false;
+        this.easterEgg = false;
     }
 
     start() {
@@ -23,6 +28,7 @@ class Game {
 
     gameLoop () {
         this.player.move();
+        this.audio.play();
         document.getElementById("score").innerText = this.score;
         document.getElementById("lives").innerText = this.lives;
         if (this.lives <= 0) {this.isGameOver = "true"}
@@ -37,6 +43,7 @@ class Game {
                     this.score +=1;
                     this.numBot +=1;
                     this.g += 20; // average weight of a bottle = 20g.
+                    this.ohYeah.play();
                 } else {                
                 nextBottles.push(bottle) // no increment in the array size
                 }
@@ -45,11 +52,22 @@ class Game {
                     bottle.element.remove() // bottles will float on the ocean level for a while
                 }, 5000);
                 this.lives -=1;
+                this.ohNo.play();
             } 
         });
         this.bottles = nextBottles; 
         if (this.animatedId % 100 === 0) {
             this.bottles.push(new Bottle (this.gameScreen));
+        }
+
+        if (this.isMuted === true) {
+            this.audio.pause();
+            this.ohYeah.pause();
+            this.ohNo.pause();
+        }
+
+        if (this.easterEgg === true) {
+            nextBottles.forEach(bottle => bottle.element.src = "img/money.png");
         }
 
         if (this.isGameOver && this.score >= 10) {

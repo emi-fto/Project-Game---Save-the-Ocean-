@@ -25,6 +25,7 @@ class Game {
         this.player.move();
         document.getElementById("score").innerText = this.score;
         document.getElementById("lives").innerText = this.lives;
+        if (this.lives <= 0) {this.isGameOver = "true"}
         document.getElementById("numBot").innerText = this.numBot;
         document.getElementById("g").innerText = this.g; 
         const nextBottles = [] 
@@ -37,17 +38,14 @@ class Game {
                     this.numBot +=1;
                     this.g += 20; // average weight of a bottle = 20g.
                 } else {                
-                nextBottles.push(bottle)
-                }// no increment in the array size
+                nextBottles.push(bottle) // no increment in the array size
+                }
             } else {
                 setInterval(() => {
-                    bottle.element.remove()
+                    bottle.element.remove() // bottles will float on the ocean level for a while
                 }, 5000);
-                if (this.lives <= 0) {
-                    this.isGameOver = "true";
-                } else {
-                    this.lives -=1}
-            } // no else and remove element so bottles will anchor on the ocean level
+                this.lives -=1;
+            } 
         });
         this.bottles = nextBottles; 
         if (this.animatedId % 100 === 0) {

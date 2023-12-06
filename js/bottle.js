@@ -17,14 +17,14 @@ class Bottle {
         this.gameScreen.appendChild(this.element);  
         this.counter = 1 + (setInterval(() => {
             +1
-        }, 10)); // increment the speed of falling bottles but also the top, so they will go under the sea level!
+        }, 1000)); // increment the speed of falling bottles
     }
 
     move (){
         if (this.top < 619 - 130) {
             this.top += this.counter;
         } else {
-            this.top = 619 - 130;
+            this.top = 619 - 130;  // prevent bottles to go under the sea level!
         }
         this.updatePosition();
     }

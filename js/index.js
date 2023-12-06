@@ -22,7 +22,7 @@ window.addEventListener("load", () => {
         restartGame();
     });
 
-    document.addEventListener("keydown", (event) => { //setting the keys to move and an Easter Egg
+    document.addEventListener("keydown", (event) => { 
         if (event.code === "ArrowUp") {
             game.player.directionY = -5;
         }
@@ -36,7 +36,7 @@ window.addEventListener("load", () => {
             game.player.directionX = +5;
         }
         if (event.code === "KeyM") {
-            game.bottles.forEach(bottle => bottle.element.src = "img/money.png");
+            game.bottles.forEach(bottle => bottle.element.src = "img/money.png"); //setting the Easter Egg
         }
     });
 

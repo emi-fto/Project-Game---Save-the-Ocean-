@@ -15,6 +15,8 @@ class Game {
         this.audio = new Audio ("audio/waves.mp3");
         this.ohYeah = new Audio ("audio/ohyeah.mp3");
         this.ohNo = new Audio ("audio/ohno.mp3");
+        this.cash = new Audio ("audio/cash.mp3");
+        this.adieu = new Audio ("audio/adieu.mp3");
         this.isMuted = false;
         this.easterEgg = false;
     }
@@ -43,7 +45,9 @@ class Game {
                     this.score +=1;
                     this.numBot +=1;
                     this.g += 20; // average weight of a bottle = 20g.
-                    this.ohYeah.play();
+                    if (this.easterEgg){
+                        this.cash.play()      
+                    } else {this.ohYeah.play()};
                 } else {                
                 nextBottles.push(bottle) // no increment in the array size
                 }
@@ -52,7 +56,9 @@ class Game {
                     bottle.element.remove() // bottles will float on the ocean level for a while
                 }, 5000);
                 this.lives -=1;
-                this.ohNo.play();
+                if (this.easterEgg){
+                    this.adieu.play()      
+                } else {this.ohNo.play()}
             } 
         });
         this.bottles = nextBottles; 
@@ -64,6 +70,8 @@ class Game {
             this.audio.pause();
             this.ohYeah.pause();
             this.ohNo.pause();
+            this.cash.pause();
+            this.adieu.pause();
         }
 
         if (this.easterEgg === true) {

@@ -61,7 +61,7 @@ h2:not(#stats h2) {
 
 #gameIntro {
     display: flex; /* will turn into none with DOM Manipulation */
-    background-image: url("../img/dirtyoc.png");
+    background-image: url("../img/dirtyocean.png");
     background-size: cover;
     width: 100vW;
     height: calc(45vW + 4px);
@@ -102,7 +102,7 @@ h2:not(#stats h2) {
 
 #gameEnd1 {
     display: none; /* will turn into flex with DOM Manipulation */
-    background-image: url("../img/clearoc.png");
+    background-image: url("../img/clearocean.png");
     background-size: cover;
     width: 100vw;
     height: calc(45vW + 4px);   
@@ -116,7 +116,7 @@ h2:not(#stats h2) {
 
 #gameEnd2 {
     display: none; /* will turn into flex with DOM Manipulation */
-    background-image: url("../img/dirtyoc.png");
+    background-image: url("../img/dirtyocean.png");
     background-size: cover;
     width: 100vw;
     height: calc(45vW + 4px);  

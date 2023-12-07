@@ -1,6 +1,6 @@
 # Save the Ocean!
 
-!["Picture of the Ocean"](https://github.com/emi-fto/Project-Game---Save-the-Ocean-/blob/main/img/clearocean.png)
+!["Picture of the Ocean"](https://github.com/emi-fto/Project-Game---Save-the-Ocean-/blob/main/img/readmeimg.png)
 
 [Click here to see deployed game](https://emi-fto.github.io/Project-Game---Save-the-Ocean-/)
 

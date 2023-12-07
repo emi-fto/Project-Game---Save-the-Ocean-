@@ -31,7 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url("../img/deepwater.jpg");
+    background-image: url("../img/deepwater.png");
     background-size: cover;
 }
 ol, ul {
@@ -61,7 +61,7 @@ h2:not(#stats h2) {
 
 #gameIntro {
     display: flex; /* will turn into none with DOM Manipulation */
-    background-image: url("../img/dirtyoc.jpg");
+    background-image: url("../img/dirtyoc.png");
     background-size: cover;
     width: 100vW;
     height: calc(45vW + 4px);
@@ -81,7 +81,7 @@ h2:not(#stats h2) {
 
 #gameContainer{
     display: none; /* will turn into block with DOM Manipulation */
-    background-image: url("../img/ocplay.jpg");
+    background-image: url("../img/ocplay.gif");
     width: 1366px;
     height: 619px; 
     position: relative;
@@ -102,7 +102,7 @@ h2:not(#stats h2) {
 
 #gameEnd1 {
     display: none; /* will turn into flex with DOM Manipulation */
-    background-image: url("../img/clearoc.jpg");
+    background-image: url("../img/clearoc.png");
     background-size: cover;
     width: 100vw;
     height: calc(45vW + 4px);   
@@ -116,7 +116,7 @@ h2:not(#stats h2) {
 
 #gameEnd2 {
     display: none; /* will turn into flex with DOM Manipulation */
-    background-image: url("../img/dirtyoc.jpg");
+    background-image: url("../img/dirtyoc.png");
     background-size: cover;
     width: 100vw;
     height: calc(45vW + 4px);  
